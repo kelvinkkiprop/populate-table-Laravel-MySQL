@@ -1,0 +1,321 @@
+/*--------------------------------------COMMON------------------------------------------*/
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999999;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  margin: -40px 0 0 -100px;
+}
+
+#status .text-warning {
+  color: #FAA731 !important;
+}
+
+#status .text-secondary {
+  color: #000000 !important;
+}
+
+#status .text-info {
+  color: #221543 !important;
+}
+
+/*--------------------------------------./COMMON------------------------------------------*/
+/*--------------------------------------NAVIGATION------------------------------------------*/
+#navigation .navbar {
+  background-color: #FAA731 !important;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(112, 112, 112, 0.16), 0 2px 10px 0 rgba(112, 112, 112, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(112, 112, 112, 0.16), 0 2px 10px 0 rgba(112, 112, 112, 0.12);
+}
+
+#navigation .navbar .navbar-nav > li > a,
+#navigation .navbar .navbar-nav > li > a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#navigation .navbar .navbar-nav > li > a:hover,
+#navigation .navbar .navbar-nav > li > a:focus {
+  background-color: #221543;
+  border-color: #221543;
+  color: #ffffff;
+  -webkit-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+}
+
+#navigation .navbar .navbar-nav > li > label {
+  color: #ffffff;
+}
+
+#navigation .navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*--------------------------------------./NAVIGATION------------------------------------------*/
+/*--------------------------------------HOME------------------------------------------*/
+#home {
+  min-height: calc(100vh - 10vh);
+  background-color: #F2F2F2;
+}
+
+#home .welcome .preview {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0.8)), to(rgba(30, 30, 30, 0.8))), url(/images/work-1.jpg);
+  background-image: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.8)), url(/images/work-1.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 7rem;
+}
+
+#home .welcome .preview .preview-text {
+  font-weight: bold;
+}
+
+#home .welcome .preview .btn-info {
+  font-weight: bold;
+  border-radius: 2.25rem;
+  background-color: #221543;
+  border-color: #221543;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+#home .welcome .preview .btn-info:hover {
+  color: #221543;
+  background-color: #F2F2F2;
+}
+
+#home .welcome .hero {
+  background-color: #F2F2F2;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#home .welcome .hero .hero-square {
+  text-align: center !important;
+}
+
+#home .welcome .hero .hero-square .hero-icon {
+  background-color: #D2D2D2;
+  padding: 25px;
+  border-radius: 50%;
+  color: #221543;
+}
+
+#home .welcome .hero .hero-square .hero-text {
+  color: #000000;
+  font-weight: bold;
+}
+
+/*--------------------------------------./HOME------------------------------------------*/
+/*--------------------------------------APP------------------------------------------*/
+#app {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/images/work-2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/work-2.jpg);
+  min-height: calc(100vh - 10vh);
+  background-size: cover;
+  background-position: center;
+}
+
+#app .logo {
+  height: 45px;
+  width: 65px;
+}
+
+#app .navbar-toggler {
+  border: 1px solid #ffffff;
+}
+
+#app .app-nav {
+  background-color: #FAA731;
+  border-top: 2px solid #FF0000;
+}
+
+#app .app-nav .navbar-brand {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#app .app-nav .navbar-brand:hover {
+  color: #F2F2F2;
+}
+
+#app .app-nav .navbar-nav li > a:hover,
+#app .app-nav .navbar-nav li > a:focus {
+  background-color: #221543;
+  color: #ffffff;
+  -webkit-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+}
+
+#app .app-nav .navbar-nav .nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+#app .app-nav .navbar-nav .nav-link.active {
+  background-color: #221543;
+  color: #ffffff;
+  -webkit-transition: all 0.1s ease 0.3s;
+  transition: all 0.1s ease 0.3s;
+}
+
+#app .app-nav .dropdown-menu {
+  padding: 10px;
+}
+
+#app .app-nav .dropdown-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  line-height: 2;
+  font-size: .9rem;
+}
+
+#app .app-nav .dropdown-menu a:hover {
+  border-bottom: 2px solid #000000;
+  font-weight: bold;
+}
+
+#app .btn-primary {
+  background-color: #221543;
+  border-color: #221543;
+}
+
+#app .btn-primary:hover {
+  background-color: #ffffff;
+  color: #221543;
+  border-color: #221543;
+}
+
+#app .btn-link {
+  color: #221543;
+}
+
+#app .btn-link:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*--------------------------------------./APP------------------------------------------*/
+/*--------------------------------------AUTH------------------------------------------*/
+#auth {
+  background-color: #F2F2F2;
+  min-height: calc(100vh - 10vh);
+}
+
+#auth .logo {
+  height: 45px;
+  width: 65px;
+}
+
+#auth .navbar-toggler {
+  border: 1px solid #ffffff;
+}
+
+#auth .app-nav {
+  background-color: #FAA731;
+}
+
+#auth .app-nav .navbar-brand {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#auth .app-nav .navbar-brand:hover {
+  color: #F2F2F2;
+}
+
+#auth .app-nav .navbar-nav li > a:hover,
+#auth .app-nav .navbar-nav li > a:focus {
+  background-color: #221543;
+  color: #ffffff;
+  -webkit-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+}
+
+#auth .app-nav .navbar-nav .nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+#auth .app-nav .navbar-nav .nav-link.active {
+  background-color: #221543;
+  color: #ffffff;
+  -webkit-transition: all 0.1s ease 0.3s;
+  transition: all 0.1s ease 0.3s;
+}
+
+#auth .app-nav .dropdown-menu {
+  padding: 10px;
+}
+
+#auth .app-nav .dropdown-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  line-height: 2;
+  font-size: .9rem;
+}
+
+#auth .app-nav .dropdown-menu a:hover {
+  border-bottom: 2px solid #000000;
+  font-weight: bold;
+}
+
+#auth .btn-dark {
+  background-color: #221543;
+  border-color: #221543;
+}
+
+#auth .btn-dark:hover {
+  background-color: #ffffff;
+  border-color: #221543;
+  color: #221543;
+}
+
+#auth .bg-info {
+  background-color: #221543 !important;
+  border-color: #221543;
+}
+
+/*--------------------------------------./AUTH------------------------------------------*/
+/*--------------------------------------FOOTER------------------------------------------*/
+#footer {
+  min-height: calc(100vh - 90vh);
+  background: #221543;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*--------------------------------------./FOOTER------------------------------------------*/
+/*# sourceMappingURL=main.css.map */

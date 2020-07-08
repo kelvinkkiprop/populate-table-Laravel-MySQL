@@ -1,0 +1,289 @@
+/*--------------------------------------COMMON------------------------------------------*/
+//Variables
+$colorPrimary: #221543;
+$colorYellow : #FAA731;
+$colorRed : #FF0000;
+$colorGrey : #707070;
+$colorDarkGrey: #D2D2D2;
+$colorLightGrey : #F2F2F2;
+$colorBlack : #000000;
+$colorWhite : #ffffff;
+//Body
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+//Preloader $ Status
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $colorWhite;
+    z-index: 999999;
+  }
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    margin: -40px 0 0 -100px;
+    .text-warning {
+      color: $colorYellow !important;
+    }
+    .text-secondary {
+      color: $colorBlack !important;
+    }
+    .text-info {
+      color: $colorPrimary !important;
+    }
+  }
+/*--------------------------------------./COMMON------------------------------------------*/
+
+
+/*--------------------------------------NAVIGATION------------------------------------------*/
+#navigation{
+    .navbar {
+        background-color: $colorYellow !important;
+        box-shadow: 0 2px 5px 0 rgba(112,112,112,0.16),0 2px 10px 0 rgba(112,112,112,0.12);
+        .navbar-nav > li > a,
+        .navbar-nav > li > a {
+            color: $colorWhite;
+            font-weight: 600;
+        }
+        .navbar-nav > li > a:hover,
+        .navbar-nav > li > a:focus {
+            background-color: $colorPrimary;
+            border-color: $colorPrimary;
+            color: $colorWhite;
+            transition: all 0.1s ease 0.1s;
+        }
+        .navbar-nav > li > label{
+            color: $colorWhite;
+        }
+        .navbar-brand {
+            color: $colorWhite;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
+/*--------------------------------------./NAVIGATION------------------------------------------*/
+
+/*--------------------------------------HOME------------------------------------------*/
+#home {
+    min-height: calc(100vh - 10vh);
+    background-color: $colorLightGrey;
+
+    .welcome{
+        .preview{
+            background-image: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.8)), url(/images/work-1.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding-top: 15vh;
+            padding-bottom: 7rem;
+            .preview-text{
+                font-weight: bold;
+            }
+            .btn-info{
+                font-weight: bold;
+                border-radius: 2.25rem;
+                background-color: $colorPrimary;
+                border-color: $colorPrimary;
+                padding-right: 5rem;
+                padding-left: 5rem;
+            }
+            .btn-info:hover{
+              color: $colorPrimary;
+              background-color: $colorLightGrey;
+            }
+        }
+        .hero{
+            background-color: $colorLightGrey;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            .hero-square{
+                text-align: center !important;
+                .hero-icon{
+                    background-color: $colorDarkGrey;
+                    padding: 25px;
+                    border-radius: 50%;
+                    color: $colorPrimary;
+                }
+                .hero-text{
+                    color: $colorBlack;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+/*--------------------------------------./HOME------------------------------------------*/
+
+
+/*--------------------------------------APP------------------------------------------*/
+#app {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/work-2.jpg);
+    min-height: calc(100vh - 10vh);    
+    background-size: cover;
+    background-position: center;
+    .logo{
+        height: 45px;
+        width: 65px;
+    }
+    .navbar-toggler {
+        border: 1px solid $colorWhite;
+    }
+    .app-nav{
+        background-color: $colorYellow;
+        border-top: 2px solid $colorRed;
+        .navbar-brand {
+            color: $colorWhite;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .navbar-brand:hover {
+            color: $colorLightGrey;
+        }
+        .navbar-nav {
+             li > a:hover,
+            li > a:focus {
+                background-color: $colorPrimary;
+                color: $colorWhite;
+                transition: all 0.1s ease 0.1s;
+            }
+            .nav-link {
+                color: $colorWhite;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-right: 10px;
+            }
+            .nav-link.active {
+                background-color: $colorPrimary;
+                color: $colorWhite;
+                transition: all 0.1s ease 0.3s;
+            }
+        }
+        .dropdown-menu {
+            padding: 10px;
+            a {
+                text-decoration: none;
+                color: #000000;
+                font-weight: 500;
+                line-height: 2;
+                font-size: .9rem;
+            }
+            a:hover {
+                border-bottom: 2px solid #000000;
+                font-weight: bold;
+            }
+        }
+    }
+    .btn-primary{
+        background-color: $colorPrimary;
+        border-color: $colorPrimary;
+    }
+    .btn-primary:hover{
+        background-color: $colorWhite;
+        color: $colorPrimary;
+        border-color: $colorPrimary;
+    }
+    .btn-link{
+        color: $colorPrimary;
+    }
+    .btn-link:hover{
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+/*--------------------------------------./APP------------------------------------------*/
+
+/*--------------------------------------AUTH------------------------------------------*/
+#auth {
+    background-color: $colorLightGrey;
+    min-height: calc(100vh - 10vh);
+    .logo{
+        height: 45px;
+        width: 65px;
+    }
+    .navbar-toggler {
+        border: 1px solid $colorWhite;
+    }
+    .app-nav{
+        background-color: $colorYellow;
+        .navbar-brand {
+            color: $colorWhite;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .navbar-brand:hover {
+            color: $colorLightGrey;
+        }
+        .navbar-nav {
+             li > a:hover,
+            li > a:focus {
+                background-color: $colorPrimary;
+                color: $colorWhite;
+                transition: all 0.1s ease 0.1s;
+            }
+            .nav-link {
+                color: $colorWhite;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-right: 10px;
+            }
+            .nav-link.active {
+                background-color: $colorPrimary;
+                color: $colorWhite;
+                transition: all 0.1s ease 0.3s;
+            }
+        }
+        .dropdown-menu {
+            padding: 10px;
+            a {
+                text-decoration: none;
+                color: #000000;
+                font-weight: 500;
+                line-height: 2;
+                font-size: .9rem;
+            }
+            a:hover {
+                border-bottom: 2px solid #000000;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .btn-dark{
+        background-color: $colorPrimary;
+        border-color: $colorPrimary;
+    }.btn-dark:hover{
+        background-color: $colorWhite;
+        border-color: $colorPrimary;
+        color: $colorPrimary;
+    }
+    .bg-info{
+        background-color: $colorPrimary !important;
+        border-color: $colorPrimary;
+    }
+}
+/*--------------------------------------./AUTH------------------------------------------*/
+
+
+/*--------------------------------------FOOTER------------------------------------------*/
+#footer {
+    min-height: calc(100vh - 90vh);
+    background: $colorPrimary;
+    color: $colorWhite;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+/*--------------------------------------./FOOTER------------------------------------------*/
