@@ -76,7 +76,7 @@
 
                 <!-------------------------------Table-------------------------------> 
                 @if($items->count()>0)
-                <form method="POST" action="{{ url('save table items') }}">
+                <form method="GET" action="{{ url('save table items') }}">
                     @csrf   
                 <div class="table-responsive">
                     <table class="table table-striped">

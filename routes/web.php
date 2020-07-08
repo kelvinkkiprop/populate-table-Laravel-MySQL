@@ -27,11 +27,15 @@ Route::get('logout', 'Auth\LoginController@logout');
 
 
 //Items
-Route::get('add item', 'ItemController@index');
-Route::post('add item', 'ItemController@store');
-Route::get('item/{id}/delete', 'ItemController@destroy');
-Route::post('add item', 'ItemController@store');
-Route::get('compute/{given_price}/{given_quantity}/item', 'ItemController@computing');
+Route::get('add item', 'Others\ItemController@index');
+Route::post('add item', 'Others\ItemController@store');
+Route::get('item/{id}/delete', 'Others\ItemController@destroy');
+Route::post('add item', 'Others\ItemController@store');
+Route::get('compute/{given_price}/{given_quantity}/item', 'Others\ItemController@computing');
+
+
+//Orders
+Route::get('orders', 'Others\OrderController@index');
 
 //Table
 Route::get('save table items', 'ItemController@saveTableItems');
